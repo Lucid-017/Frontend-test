@@ -1,0 +1,44 @@
+[
+    {
+      "userId": 1,
+      "name": "Jane Doe",
+      "email": "jane.doe@example.com",
+      "transactions": [
+        { "transactionId": "TXN001", "date": "2025-02-01", "amount": 150.75, "description": "Purchase at Store A" },
+        { "transactionId": "TXN002", "date": "2025-02-05", "amount": -50.25, "description": "Refund" }
+      ]
+    },
+    {
+      "userId": 2,
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "transactions": [
+        { "transactionId": "TXN101", "date": "2025-02-10", "amount": 300.0, "description": "Salary Credit" },
+        { "transactionId": "TXN102", "date": "2025-02-15", "amount": -100.0, "description": "Grocery Shopping" }
+      ]
+    },
+    {
+      "userId": 3,
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "transactions": [
+        { "transactionId": "TXN201", "date": "2025-01-20", "amount": 500.0, "description": "Freelance Payment" }
+      ]
+    },
+    {
+      "userId": 4,
+      "name": "Bob Williams",
+      "email": "bob.williams@example.com",
+      "transactions": [
+        { "transactionId": "TXN301", "date": "2025-01-22", "amount": -200.0, "description": "Car Repair" },
+        { "transactionId": "TXN302", "date": "2025-01-30", "amount": 50.0, "description": "Gift Refund" }
+      ]
+    },
+    {
+      "userId": 5,
+      "name": "Charlie Brown",
+      "email": "charlie.brown@example.com",
+      "transactions": []
+    }
+  ]
+  
