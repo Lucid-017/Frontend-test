@@ -1,0 +1,105 @@
+/* Base Container and Typography */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  /* Responsive table wrapper for horizontal scrolling */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  /* Table styling */
+  .transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .transaction-table th,
+  .transaction-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .transaction-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .row-light {
+    background-color: #f9f9f9;
+  }
+  
+  .row-dark {
+    background-color: #fff;
+  }
+  
+  .amount-positive {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .amount-negative {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .no-transactions {
+    text-align: center;
+    font-style: italic;
+    padding: 12px;
+  }
+  
+  /* Logout button styling */
+  .logoutbtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutbtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .transaction-table th,
+    .transaction-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 1.5em;
+    }
+    .transaction-table th,
+    .transaction-table td {
+      padding: 8px;
+      font-size: 12px;
+    }
+    .logoutbtn {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

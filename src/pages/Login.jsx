@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import './Login.css'
 
 const Login = () => {
       // state
@@ -43,16 +44,33 @@ const Login = () => {
   }
 
   return (
-    <div>
-      <form>
+<div className="login-container">
+      <form className="login-form" onSubmit={handleSubmit}>
+        <h2>Login</h2>
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" onChange={(e)=>setEmail(e.target.value)} value={email} name="email" required />
-        <label htmlFor="phone">Password:</label>
-        <input type="password" onChange={(e)=>setPassword(e.target.value)} id="phone" name="phone" required />
-        {msgArr.map((msg, index) => (
-          <small key={index}>{msg}</small>
-        ))}
-        <button type="submit" onClick={handleSubmit}>Submit</button>
+        <input 
+          type="email"
+          id="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+        <label htmlFor="password">Password:</label>
+        <input 
+          type="password"
+          id="password"
+          name="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          required
+        />
+        <div className="error-messages">
+          {msgArr.map((msg, index) => (
+            <small key={index}>{msg}</small>
+          ))}
+        </div>
+        <button type="submit">Submit</button>
       </form>
     </div>
   )

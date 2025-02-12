@@ -1,13 +1,16 @@
 import React from 'react';
-import users from './Dummy.json';
+import users from '../Dummy.json';
 import { useNavigate } from 'react-router-dom';
-// import './User.css'; // Importing external CSS for styling
+import './User.css';
 
 const User = () => {
     const navigate = useNavigate()
   return (
     <div className="container">
-      <h2 className="title">User Transaction History</h2>
+    <h2 className="title">User Transaction History</h2>
+    
+    {/* Wrap table in a responsive wrapper */}
+    <div className="table-wrapper">
       <table className="transaction-table">
         <thead>
           <tr>
@@ -39,14 +42,17 @@ const User = () => {
                 <td>{user.userId}</td>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
-                <td colSpan="3" className="no-transactions">No transactions available</td>
+                <td colSpan="3" className="no-transactions">
+                  No transactions available
+                </td>
               </tr>
             )
           )}
         </tbody>
       </table>
-      <button className='logoutbtn' onClick={()=>navigate('/')}>Logout</button>
     </div>
+    <button className="logoutbtn" onClick={() => navigate('/')}>Logout</button>
+  </div>
   );
 };
 
